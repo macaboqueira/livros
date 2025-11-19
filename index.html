@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO e Meta Tags -->
+    <title>Guardiões da Macaboqueira | Lira Dutra - Tesouros da Cultura Granjense</title>
+    <meta name="description" content="Descubra os segredos, histórias e a alma de Granja no e-book Guardiões da Macaboqueira. Uma obra essencial de Lira Dutra sobre os tesouros vivos da nossa cultura.">
+    <meta name="keywords" content="Granja Ceará, Cultura Granjense, Lira Dutra, Macaboqueira, História do Ceará, E-book Cultural, Patrimônio Vivo">
+    <meta name="author" content="Lira Dutra">
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="book">
+    <meta property="og:title" content="Guardiões da Macaboqueira - Tesouros Vivos">
+    <meta property="og:description" content="Mergulhe nas raízes de Granja. Baixe agora o e-book definitivo sobre nossa cultura.">
+    <meta property="og:image" content="https://i.imgur.com/your-ebook-cover-image.jpg"> <!-- Substitua pelo link real da imagem -->
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Configuração de Fonte Global */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f3e8;
+            color: #3e2723;
+            overflow-x: hidden;
+        }
+        
+        /* Cores da Marca */
+        .bg-primary { background-color: #00796b; }
+        .text-primary { color: #00796b; }
+        .bg-secondary { background-color: #ffb300; }
+        .text-secondary { color: #ffb300; }
+        .border-secondary { border-color: #ffb300; }
+
+        /* Mockup do Livro */
+        .book-mockup {
+            box-shadow: 20px 20px 60px rgba(0,0,0,0.3);
+            transition: transform 0.4s ease-in-out;
+            transform-style: preserve-3d;
+        }
+        .book-mockup:hover {
+            transform: translateY(-10px) rotateY(-5deg);
+        }
+        .book-mockup img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        /* Botão Pulsante */
+        .btn-pulse {
+            animation: shadow-pulse 2s infinite;
+        }
+        @keyframes shadow-pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 179, 0, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 179, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 179, 0, 0); }
+        }
+
+        /* Fade In Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Checkmark List */
+        .check-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .check-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #00796b;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Banner de Urgência Topo -->
+    <div class="bg-red-600 text-white text-center py-2 text-sm font-bold tracking-wide px-4">
+        🔥 Oferta de Lançamento: O preço promocional encerra em breve!
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <!-- Ícone de livro simples -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+                <span class="text-lg md:text-xl font-bold text-gray-800 tracking-tight">Guardiões da Macaboqueira</span>
+            </div>
+            <a href="#comprar" class="hidden md:inline-block px-5 py-2 bg-secondary text-[#3e2723] font-bold rounded-full hover:bg-yellow-400 transition transform hover:scale-105 text-sm">
+                Baixar Agora
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-primary text-white pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden relative">
+        <!-- Elemento decorativo de fundo -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-white opacity-5 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center gap-12">
+            
+            <!-- Texto -->
+            <div class="md:w-1/2 text-center md:text-left z-10 fade-in">
+                <div class="inline-block bg-white/10 backdrop-blur px-4 py-1 rounded-full mb-4 border border-white/20">
+                    <span class="text-secondary font-bold text-xs md:text-sm uppercase tracking-wider">★ Mais vendido em Cultura Regional</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                    A Alma de Granja <span class="text-secondary">Preservada</span> em Suas Mãos
+                </h1>
+                <p class="text-lg md:text-xl mb-8 text-gray-100 leading-relaxed">
+                    Descubra os segredos, as lendas e a sabedoria dos verdadeiros <strong>Guardiões da Macaboqueira</strong>. Um registro histórico único que corre o risco de se perder no tempo.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#comprar" class="px-8 py-4 bg-secondary text-[#3e2723] font-extrabold text-lg rounded-xl shadow-xl btn-pulse hover:bg-yellow-400 transition">
+                        SIM! Quero Ler Agora
+                    </a>
+                </div>
+                <p class="mt-4 text-xs text-gray-300 flex items-center justify-center md:justify-start gap-1">
+                    <svg class="w-4 h-4 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                    Entrega imediata via e-mail (PDF)
+                </p>
+            </div>
+
+            <!-- Imagem Hero -->
+            <div class="md:w-1/2 flex justify-center relative fade-in delay-200">
+                <div class="book-mockup w-64 md:w-80 bg-gray-800 rounded-lg relative z-10">
+                     <!-- Lembre-se de colocar a imagem real aqui -->
+                    <img src="https://i.imgur.com/your-ebook-cover-image.jpg" alt="Capa do Livro Guardiões da Macaboqueira" class="rounded-lg shadow-2xl border border-white/10">
+                </div>
+                <!-- Sombra decorativa -->
+                <div class="absolute bottom-0 w-64 h-4 bg-black/30 blur-xl rounded-full transform translate-y-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Preview (Sneak Peek) - NOVO -->
+    <section class="py-16 bg-white fade-in">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">O Que Você Encontrará Nas Páginas Deste Tesouro?</h2>
+                <p class="text-gray-600">Um mergulho profundo em capítulos desenhados para emocionar e educar.</p>
+            </div>
+            
+            <div class="bg-[#f7f3e8] rounded-2xl p-8 shadow-inner border border-gray-200">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <ul class="space-y-4 check-list text-lg text-gray-700">
+                        <li><strong>A Gênese da Macaboqueira:</strong> Como tudo começou e as raízes esquecidas.</li>
+                        <li><strong>Mestres do Artesanato:</strong> Segredos passados de geração em geração.</li>
+                        <li><strong>A Culinária Ancestral:</strong> Sabores que contam a história de um povo.</li>
+                    </ul>
+                    <ul class="space-y-4 check-list text-lg text-gray-700">
+                        <li><strong>Lendas Urbanas e Rurais:</strong> O imaginário popular desvendado.</li>
+                        <li><strong>Festas e Devoção:</strong> A fé que move a comunidade granjense.</li>
+                        <li><strong>O Futuro da Tradição:</strong> Como preservar nosso legado hoje.</li>
+                    </ul>
+                </div>
+                <div class="mt-8 text-center">
+                    <span class="inline-block bg-white px-4 py-2 rounded-lg text-sm font-semibold text-primary shadow-sm border border-gray-100">
+                        + Bônus Exclusivo: Guia Fotográfico Digital
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prova Social / Depoimentos - NOVO -->
+    <section class="py-16 bg-gray-50 fade-in">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-[#3e2723] mb-12">O Que Dizem os Leitores</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Depoimento 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-secondary">
+                    <div class="flex items-center mb-4 text-yellow-400">★★★★★</div>
+                    <p class="text-gray-600 italic mb-6">"Como filha de Granja que mora longe, esse livro me fez chorar de saudade e orgulho. Lira Dutra capturou a alma da nossa terra."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-xs font-bold text-gray-500">MF</div>
+                        <div>
+                            <p class="font-bold text-sm">Maria F. S.</p>
+                            <p class="text-xs text-gray-500">Professora</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-secondary">
+                    <div class="flex items-center mb-4 text-yellow-400">★★★★★</div>
+                    <p class="text-gray-600 italic mb-6">"Uma pesquisa impecável. Não é apenas um livro de história, é um documento vivo. Deveria estar em todas as escolas do Ceará."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-xs font-bold text-gray-500">JP</div>
+                        <div>
+                            <p class="font-bold text-sm">João Paulo R.</p>
+                            <p class="text-xs text-gray-500">Historiador</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-secondary">
+                    <div class="flex items-center mb-4 text-yellow-400">★★★★★</div>
+                    <p class="text-gray-600 italic mb-6">"Comprei pela curiosidade e me surpreendi com a riqueza de detalhes. O capítulo sobre os mestres artesãos é fascinante."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-xs font-bold text-gray-500">AL</div>
+                        <div>
+                            <p class="font-bold text-sm">Ana Lúcia</p>
+                            <p class="text-xs text-gray-500">Estudante</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre o Autor (Compacto) -->
+    <section class="bg-primary text-white py-12 fade-in">
+        <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
+            <div class="w-24 h-24 md:w-32 md:h-32 bg-gray-200 rounded-full overflow-hidden border-4 border-secondary flex-shrink-0">
+                 <!-- Imagem Autor Atualizada -->
+                <img src="https://static.ndmais.com.br/eleicoes/2024/ce/FCE60001982176_div.jpg" alt="Foto de Lira Dutra" class="w-full h-full object-cover">
+            </div>
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-bold mb-2">Quem é Lira Dutra?</h3>
+                <p class="text-gray-200 max-w-2xl">Pesquisador incansável e voz ativa na preservação cultural de Granja. Escreveu esta obra não apenas para registrar fatos, mas para eternizar sentimentos e garantir que as futuras gerações conheçam suas origens.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Oferta com Urgência e Garantia -->
+    <section id="comprar" class="py-16 md:py-24 bg-white fade-in relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            
+            <!-- Box de Preço -->
+            <div class="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden">
+                <div class="bg-secondary p-4 text-center">
+                    <p class="font-bold text-[#3e2723] uppercase tracking-wider text-sm">⚡ Oferta Especial por Tempo Limitado</p>
+                </div>
+                
+                <div class="p-8 md:p-12 text-center">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-primary mb-2">E-book Completo + Bônus</h2>
+                    <p class="text-gray-500 mb-8">Acesso vitalício e imediato</p>
+
+                    <!-- Preço -->
+                    <div class="flex justify-center items-baseline gap-3 mb-8">
+                        <span class="text-gray-400 line-through text-xl">R$ 49,90</span>
+                        <span class="text-6xl font-black text-[#3e2723]">R$ 29,90</span>
+                    </div>
+
+                    <!-- Cronômetro -->
+                    <div class="inline-flex items-center gap-2 bg-red-50 text-red-600 px-4 py-2 rounded-lg mb-8 font-mono font-bold border border-red-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Oferta expira em: <span id="countdown">05:43:21</span>
+                    </div>
+
+                    <!-- CTA Final -->
+                    <a href="#" class="w-full md:w-auto inline-block px-10 py-5 bg-green-600 text-white font-bold text-2xl rounded-xl shadow-lg hover:bg-green-700 hover:shadow-2xl transition transform hover:-translate-y-1 mb-6">
+                        GARANTIR MINHA CÓPIA AGORA
+                    </a>
+                    
+                    <div class="flex justify-center gap-4 grayscale opacity-70 mb-8">
+                        <!-- Ícones de cartão (visuais simples) -->
+                        <div class="h-6 w-10 bg-gray-200 rounded"></div>
+                        <div class="h-6 w-10 bg-gray-200 rounded"></div>
+                        <div class="h-6 w-10 bg-gray-200 rounded"></div>
+                        <div class="h-6 w-10 bg-gray-200 rounded"></div>
+                    </div>
+
+                    <!-- Garantia (Risk Reversal) - NOVO -->
+                    <div class="border-t border-gray-100 pt-8 mt-8">
+                        <div class="flex flex-col md:flex-row items-center justify-center gap-4 text-left max-w-lg mx-auto">
+                            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 text-green-600">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-800">Garantia Incondicional de 7 Dias</h4>
+                                <p class="text-sm text-gray-600">Se você não amar o conteúdo, devolvemos 100% do seu dinheiro. Sem perguntas. O risco é todo nosso.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#3e2723] text-white/80 py-8 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="mb-2">&copy; 2025 Lira Dutra. Todos os direitos reservados.</p>
+            <p>Contato: suporte@guardioesdamacaboqueira.com.br</p>
+            <div class="mt-4 flex justify-center gap-4 text-xs text-white/50">
+                <a href="#" class="hover:text-white">Termos de Uso</a>
+                <a href="#" class="hover:text-white">Políticas de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Fade In Observer
+        document.addEventListener('DOMContentLoaded', function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+            // 2. Countdown Timer (Evergreen - Reseta a cada visita ou mantém fixo por sessão)
+            // Definindo um tempo fixo de 4 horas a partir do acesso para criar urgência
+            let timeInSeconds = 4 * 60 * 60 + 15 * 60 + 30; // 4h 15m 30s
+            
+            const countdownEl = document.getElementById('countdown');
+            
+            const updateTimer = () => {
+                const hours = Math.floor(timeInSeconds / 3600);
+                const minutes = Math.floor((timeInSeconds % 3600) / 60);
+                const seconds = timeInSeconds % 60;
+                
+                countdownEl.textContent = 
+                    `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+                
+                if (timeInSeconds > 0) {
+                    timeInSeconds--;
+                }
+            };
+            
+            setInterval(updateTimer, 1000);
+            updateTimer();
+        });
+    </script>
+</body>
+</html>
